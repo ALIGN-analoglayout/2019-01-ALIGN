@@ -10,9 +10,9 @@ It processses all individual graphs to prepare inputs for Graph convolution netw
 
 Since Graph Convolution network need one graph as input, all OTA circuit graphs has been merged in block diagonal fashion.
 
-# to run the demo use:
+# To run the demo use:
 python node_classifier.pyc
 
-# to preprocess the data use:
-python preprocess_data.pyc
-this creates a processed_data.p   which in used by the classifier
+# To preprocess the data use:
+python preprocess_data.pyc  
+This creates a processed_data.p which in used by the classifier
