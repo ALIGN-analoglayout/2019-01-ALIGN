@@ -6,13 +6,13 @@
 ## There is basic template of libraries which we provide: basic_template.sp
 ## User can add more templates in : user_template.sp
 #python ./src/read_library.py
-./src/read_library.pyc
+python ./src/read_library.pyc
 # the output is stored in library_graph in yaml format
 
 ## READ input netlist 
 ## Reads inputs netlist of spice format (".sp") from input_circuit folder
 ## User need to keep his spice netlist in this directory : switched_cap_filter.sp
-./src/read_netlist.pyc
+python ./src/read_netlist.pyc
 # the output is stored in circuit_graph directory in yaml format
 
 # <Place holder for generate LEF>
@@ -21,9 +21,9 @@
 ## MATCH GRAPH
 ## loads graph from circuit_graph and matches the graphs defined in library_graph
 ## reduces the graph by merging nodes of matched graphs
-./src/match_graph.pyc
+python ./src/match_graph.pyc
 #store the matches and reduced graph in pickle binary format 
 
 ## GENERATE VERILOG
-./src/write_verilog.pyc
+python ./src/write_verilog.pyc
 #store output in verilog format in results dir
