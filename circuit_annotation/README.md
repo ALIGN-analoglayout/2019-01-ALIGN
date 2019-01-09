@@ -10,4 +10,7 @@ docker run --mount source=inputVol,target=/INPUT topology bash -c "source /sympy
 # Direct run on terminal
 source ./runme.sh
 
+# INPUT is testbench circuit
+You need to add your circu
+
 
