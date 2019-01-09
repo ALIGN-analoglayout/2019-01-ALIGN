@@ -25,8 +25,12 @@ MACRO Cap_30f_1x3
   OBS
       LAYER M1 ;
         RECT 0 0 6.75 2.214 ;
+      END
+  OBS
       LAYER M2 ;
         RECT 0.018 0.018 6.732 2.196 ;
+      END
+  OBS
       LAYER M3 ;
         RECT 0 0 6.75 2.214 ;
       END
@@ -55,8 +59,12 @@ MACRO Cap_30f_3x1
   OBS
       LAYER M1 ;
         RECT 0 0 2.214 6.75 ;
+      END
+  OBS
       LAYER M2 ;
         RECT 0.018 0.018 2.196 6.732 ;
+      END
+  OBS
       LAYER M3 ;
         RECT 0 0 2.214 6.75 ;
       END
