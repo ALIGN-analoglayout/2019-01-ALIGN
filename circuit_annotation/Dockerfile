@@ -9,8 +9,6 @@ RUN \
 FROM with_python as topology
  
 RUN \
-    pip install matplotlib
-RUN \
     mkdir -p /DEMO \
     rm  /DEMO/ \
     mkdir -p /DEMO/src \
