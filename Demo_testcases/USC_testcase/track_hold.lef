@@ -26,7 +26,7 @@ MACRO Cap_30f_1x3
       LAYER M1 ;
         RECT 0 0 6.75 2.214 ;
       LAYER M2 ;
-        RECT 0 0 6.75 2.214 ;
+        RECT 0.018 0.018 6.732 2.196 ;
       LAYER M3 ;
         RECT 0 0 6.75 2.214 ;
       END
@@ -56,7 +56,7 @@ MACRO Cap_30f_3x1
       LAYER M1 ;
         RECT 0 0 2.214 6.75 ;
       LAYER M2 ;
-        RECT 0 0 2.214 6.75 ;
+        RECT 0.018 0.018 2.196 6.732 ;
       LAYER M3 ;
         RECT 0 0 2.214 6.75 ;
       END
