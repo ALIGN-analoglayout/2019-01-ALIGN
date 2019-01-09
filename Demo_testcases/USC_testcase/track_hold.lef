@@ -34,7 +34,7 @@ END Cap_30f_1x3
 
 MACRO Cap_30f_3x1
   ORIGIN 0 0 ;
-  FOREIGN Cap_30f_1x3 0 0 ;
+  FOREIGN Cap_30f_3x1 0 0 ;
   SIZE 2.214 BY 6.75 ;
   PIN PLUS
     DIRECTION INOUT ;
@@ -60,7 +60,7 @@ MACRO Cap_30f_3x1
       LAYER M3 ;
         RECT 0 0 2.214 6.75 ;
       END
-END Cap_30f_1x3
+END Cap_30f_3x1
 
 MACRO Switch_NMOS_16x8
   ORIGIN 0 0 ;
