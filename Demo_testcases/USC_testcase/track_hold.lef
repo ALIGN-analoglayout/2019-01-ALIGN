@@ -70,6 +70,40 @@ MACRO Cap_30f_3x1
       END
 END Cap_30f_3x1
 
+MACRO Cap_30f_1x1
+  ORIGIN 0 0 ;
+  FOREIGN Cap_30f_1x1 0 0 ;
+  SIZE 3.87 BY 3.87 ;
+  PIN PLUS
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0 3.852 3.87 3.87 ;
+    END
+  END PLUS
+  PIN MINUS
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0 0 3.87 0.018 ;
+    END
+  END MINUS
+  OBS
+      LAYER M1 ;
+        RECT 0 0 3.87 3.87 ;
+      END
+  OBS
+      LAYER M2 ;
+        RECT 0.018 0.018 3.852 3.852 ;
+      END
+  OBS
+      LAYER M3 ;
+        RECT 0 0 3.87 3.87 ;
+      END
+END Cap_30f_1x1
+
 MACRO Switch_NMOS_16x8
   ORIGIN 0 0 ;
   FOREIGN Switch_NMOS_16x8 0 0 ;
