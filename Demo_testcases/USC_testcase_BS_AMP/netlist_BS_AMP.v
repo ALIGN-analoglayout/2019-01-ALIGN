@@ -40,7 +40,7 @@ module IBS_norm_hvt ( IBS_IN, IBSn_OUT, IBSp_OUT, VDD, VSS );
 inout IBS_IN, IBSn_OUT, IBSp_OUT, VDD, VSS;
 
 DiodeConnected_PMOS_4x3 MP1 ( .D(IBS_IN), .S(VDD) ); 
-SCM_NMOS_4x3 MN1_MN0 ( .D1(net7), .D2(IBSn_OUT), .S(VSS) ); 
+SCM_NMOS_1x4_4x3 MN1_MN0 ( .D1(net7), .D2(IBSn_OUT), .S(VSS) ); 
 CMC_PMOS_4x3 MP2_MP0 ( .D1(IBSp_OUT), .G(IBS_IN), .D2(net7), .S(VDD) ); 
 
 endmodule
@@ -50,8 +50,8 @@ inout IBSn, IN, IP, ON, OP, VDD, VSS;
 
 res_3p83 RR0 ( .ON(ON), .VDD(VDD) ); 
 res_3p83 RR9 ( .OP(OP), .VDD(VDD) ); 
-SCM_NMOS_4x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
-DP_NMOS_4x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
+SCM_NMOS_4x4_4x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
+DP_NMOS_2x2_4x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
 
 endmodule
 
@@ -69,8 +69,8 @@ inout IBSn, IN, IP, ON, OP, VDD, VSS;
 
 res_3p83 RR0 ( .ON(ON), .VDD(VDD) ); 
 res_3p83 RR9 ( .OP(OP), .VDD(VDD) ); 
-SCM_NMOS_4x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
-DP_NMOS_4x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
+SCM_NMOS_4x4_4x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
+DP_NMOS_2x2_4x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
 
 endmodule
 
@@ -79,8 +79,8 @@ inout IBSn, IN, IP, ON, OP, VDD, VSS;
 
 res_3p83 RR0 ( .ON(ON), .VDD(VDD) ); 
 res_3p83 RR9 ( .OP(OP), .VDD(VDD) ); 
-SCM_NMOS_2x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
-DP_NMOS_2x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
+SCM_NMOS_4x4_2x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
+DP_NMOS_2x2_2x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
 
 endmodule
 
@@ -98,8 +98,8 @@ inout IBSn, IN, IP, ON, OP, VDD, VSS;
 
 res_3p83 RR0 ( .ON(ON), .VDD(VDD) ); 
 res_3p83 RR9 ( .OP(OP), .VDD(VDD) ); 
-SCM_NMOS_2x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
-DP_NMOS_2x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
+SCM_NMOS_4x4_2x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
+DP_NMOS_2x2_2x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
 
 endmodule
 
