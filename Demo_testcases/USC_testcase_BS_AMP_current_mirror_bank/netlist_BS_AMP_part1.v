@@ -12,7 +12,7 @@ endmodule
 
 module SCM_BANK ( IBS_IN, IBSp_OUT, VDD, net7 ); 
 Switch_PMOS_1_4x3 MP0 ( .net7(net7), .IBS_IN(IBS_IN), .VDD(VDD) ); 
-Switch_PMOS_4_4x3 MP1 ( .IBS_IN(IBS_IN), .IBS_IN(IBS_IN), .VDD(VDD) ); 
+Switch_PMOS_1_4x3 MP1 ( .IBS_IN(IBS_IN), .IBS_IN(IBS_IN), .VDD(VDD) ); 
 Switch_PMOS_4_4x3 MP2 ( .IBSp_OUT(IBS_IN), .IBS_IN(IBSp_OUT), .VDD(VDD) ); 
   
 endmodule
@@ -21,7 +21,7 @@ module IBS_norm_rvt ( IBS_IN, IBSn_OUT, IBSp_OUT, VDD, VSS );
 inout IBS_IN, IBSn_OUT, IBSp_OUT, VDD, VSS;
 
 SCM_BANK MP0_MP1_MP2 ( .IBS_IN(IBS_IN), .IBSp_OUT(IBSp_OUT), .VDD(VDD), .net7(net7) ); 
-SCM_NMOS_4x4_4x3 MN1_MN2 ( .D1(net7), .D2(IBSn_OUT), .S(VSS) ); 
+SCM_NMOS_1x4_4x3 MN1_MN2 ( .D1(net7), .D2(IBSn_OUT), .S(VSS) ); 
 
 endmodule
 
