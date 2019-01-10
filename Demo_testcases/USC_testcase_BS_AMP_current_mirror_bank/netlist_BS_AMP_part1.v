@@ -11,6 +11,8 @@ res_3K RR8 ( .net014(net014), .gnd!(gnd!) );
 endmodule
 
 module SCM_BANK ( IBS_IN, IBSp_OUT, VDD, net7 ); 
+inout IBS_IN, IBSp_OUT, VDD, net7;
+
 Switch_PMOS_1_4x3 MP0 ( .net7(net7), .IBS_IN(IBS_IN), .VDD(VDD) ); 
 Switch_PMOS_1_4x3 MP1 ( .IBS_IN(IBS_IN), .IBS_IN(IBS_IN), .VDD(VDD) ); 
 Switch_PMOS_4_4x3 MP2 ( .IBSp_OUT(IBS_IN), .IBS_IN(IBSp_OUT), .VDD(VDD) ); 
