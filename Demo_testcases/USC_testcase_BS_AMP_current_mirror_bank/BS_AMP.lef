@@ -206,3 +206,35 @@ MACRO Switch_PMOS_1x1_4x3
   
 END Switch_PMOS_1x1_4x3
 
+MACRO SCM_NMOS_1x4_4x3
+  ORIGIN 0 0 ;
+  FOREIGN SCM_NMOS_1x4_4x3 0 0 ;
+  SIZE 1.08 BY 0.432 ;
+  PIN S
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0 0.064 1.08 0.082 ;
+    END
+  END S
+  PIN D1
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0 0.192 1.08 0.210 ;
+    END
+  END D1
+  
+  PIN D2
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0 0.128 1.08 0.146 ;
+    END
+  END D2
+ 
+  
+END SCM_NMOS_1x4_4x3
