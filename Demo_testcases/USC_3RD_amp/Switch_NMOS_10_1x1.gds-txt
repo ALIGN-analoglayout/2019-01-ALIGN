@@ -1,0 +1,509 @@
+header 5
+bgnlib 118 12 3 13 11 31 118 12 3 13 13 55
+libname "pcell"
+units 0.00025 2.5e-10
+bgnstr 118 12 3 13 13 55 69 12 31 18 0 0
+    strname "M3_M2_CDNS_543864435520"
+    boundary
+        layer 25
+        datatype 0
+        xy   5   -36 -36   36 -36   36 36   -36 36
+                 -36 -36
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy   5   -56 -36   56 -36   56 36   -56 36
+                 -56 -36
+        endel
+    boundary
+        layer 30
+        datatype 0
+        xy   5   -36 -56   36 -56   36 56   -36 56
+                 -36 -56
+        endel
+    endstr
+bgnstr 118 12 3 13 13 55 69 12 31 18 0 0
+    strname "M2_M1_CDNS_543864435521"
+    boundary
+        layer 21
+        datatype 0
+        xy   5   -36 -36   36 -36   36 36   -36 36
+                 -36 -36
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy   5   -36 -56   36 -56   36 56   -36 56
+                 -36 -56
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy   5   -56 -36   56 -36   56 36   -56 36
+                 -56 -36
+        endel
+    endstr
+bgnstr 118 12 3 13 5 58 118 12 3 13 12 43
+    strname "Switch_NMOS_10_1x1"
+    boundary
+        layer 7
+        datatype 0
+        xy 5 0 -148 0 1364 80 1364 80 -148 0 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 112 0 112 1216 184 1216 184 0 112 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 68 112 140 184 140 184 68 112 68
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 212 112 284 184 284 184 212 112 212
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 356 112 428 184 428 184 356 112 356
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 500 112 572 184 572 184 500 112 500
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 644 112 716 184 716 184 644 112 644
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 788 112 860 184 860 184 788 112 788
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 112 932 112 1004 184 1004 184 932 112 932
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 216 -148 216 1364 296 1364 296 -148 216 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 328 0 328 1340 400 1340 400 0 328 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 328 1268 328 1340 400 1340 400 1268 328 1268
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 432 -148 432 1364 512 1364 512 -148 432 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 544 0 544 1216 616 1216 616 0 544 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 68 544 140 616 140 616 68 544 68
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 212 544 284 616 284 616 212 544 212
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 356 544 428 616 428 616 356 544 356
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 500 544 572 616 572 616 500 544 500
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 644 544 716 616 716 616 644 544 644
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 788 544 860 616 860 616 788 544 788
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 544 932 544 1004 616 1004 616 932 544 932
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 648 -148 648 1364 728 1364 728 -148 648 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 760 -148 760 1364 832 1364 832 -148 760 -148
+        endel
+    boundary
+        layer 30
+        datatype 0
+        xy 5 760 -148 760 1364 832 1364 832 -148 760 -148
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 2 -68 26 796 26 796 2 -68 2
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 110 -68 134 796 134 796 110 -68 110
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 218 -68 242 796 242 796 218 -68 218
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 326 -68 350 796 350 796 326 -68 326
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 434 -68 458 796 458 796 434 -68 434
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 542 -68 566 796 566 796 542 -68 542
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 650 -68 674 796 674 796 650 -68 650
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 758 -68 782 796 782 796 758 -68 758
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 866 -68 890 796 890 796 866 -68 866
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 974 -68 998 796 998 796 974 -68 974
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 1082 -68 1106 796 1106 796 1082 -68 1082
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 -68 1190 -68 1214 796 1214 796 1190 -68 1190
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 -68 0 -68 72 796 72 796 0 -68 0
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 -68 256 -68 328 796 328 796 256 -68 256
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 -68 512 -68 584 796 584 796 512 -68 512
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 -68 768 -68 840 796 840 796 768 -68 768
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 -68 1024 -68 1096 796 1096 796 1024 -68 1024
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 116 68 116 1148 612 1148 612 68 116 68
+        endel
+    boundary
+        layer 16
+        datatype 0
+        xy 5 148 1268 148 1340 580 1340 580 1268 148 1268
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 864 -148 864 1364 944 1364 944 -148 864 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 976 0 976 1216 1048 1216 1048 0 976 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 68 976 140 1048 140 1048 68 976 68
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 212 976 284 1048 284 1048 212 976 212
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 356 976 428 1048 428 1048 356 976 356
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 500 976 572 1048 572 1048 500 976 500
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 644 976 716 1048 716 1048 644 976 644
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 788 976 860 1048 860 1048 788 976 788
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 976 932 976 1004 1048 1004 1048 932 976 932
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 1080 -148 1080 1364 1160 1364 1160 -148 1080 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 1192 0 1192 1340 1264 1340 1264 0 1192 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1192 1268 1192 1340 1264 1340 1264 1268 1192 1268
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 1296 -148 1296 1364 1376 1364 1376 -148 1296 -148
+        endel
+    boundary
+        layer 19
+        datatype 0
+        xy 5 1408 0 1408 1216 1480 1216 1480 0 1408 0
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 68 1408 140 1480 140 1480 68 1408 68
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 212 1408 284 1480 284 1480 212 1408 212
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 356 1408 428 1480 428 1480 356 1408 356
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 500 1408 572 1480 572 1480 500 1408 500
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 644 1408 716 1480 716 1480 644 1408 644
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 788 1408 860 1480 860 1480 788 1408 788
+        endel
+    boundary
+        layer 18
+        datatype 0
+        xy 5 1408 932 1408 1004 1480 1004 1480 932 1408 932
+        endel
+    boundary
+        layer 7
+        datatype 0
+        xy 5 1512 -148 1512 1364 1592 1364 1592 -148 1512 -148
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 2 796 26 1660 26 1660 2 796 2
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 110 796 134 1660 134 1660 110 796 110
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 218 796 242 1660 242 1660 218 796 218
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 326 796 350 1660 350 1660 326 796 326
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 434 796 458 1660 458 1660 434 796 434
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 542 796 566 1660 566 1660 542 796 542
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 650 796 674 1660 674 1660 650 796 650
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 758 796 782 1660 782 1660 758 796 758
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 866 796 890 1660 890 1660 866 796 866
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 974 796 998 1660 998 1660 974 796 974
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 1082 796 1106 1660 1106 1660 1082 796 1082
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 796 1190 796 1214 1660 1214 1660 1190 796 1190
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 796 0 796 72 1660 72 1660 0 796 0
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 796 256 796 328 1660 328 1660 256 796 256
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 796 512 796 584 1660 584 1660 512 796 512
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 796 768 796 840 1660 840 1660 768 796 768
+        endel
+    boundary
+        layer 20
+        datatype 0
+        xy 5 796 1024 796 1096 1660 1096 1660 1024 796 1024
+        endel
+    boundary
+        layer 11
+        datatype 0
+        xy 5 980 68 980 1148 1476 1148 1476 68 980 68
+        endel
+    boundary
+        layer 16
+        datatype 0
+        xy 5 1012 1268 1012 1340 1444 1340 1444 1268 1012 1268
+        endel
+    sref
+        sname "M3_M2_CDNS_543864435520"
+        xy 1 796 804
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 796 548
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 364 36
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 1228 36
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 148 292
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 1012 292
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 580 548
+        endel
+    sref
+        sname "M2_M1_CDNS_543864435521"
+        xy 1 1444 548
+        endel
+    boundary
+        layer 235
+        datatype 5
+        xy 5 -68 -148 -68 1364 1660 1364 1660 -148 -68 -148
+        propattr 126
+        propvalue "oaBoundary:pr"
+        endel
+    endstr
+endlib
