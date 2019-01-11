@@ -6,7 +6,7 @@ input VDD;
 Amp_diff_norm_rvt I37 ( .IBSn(net022), .IN(net019), .IP(net020), .ON(rON), .OP(rOP), .VDD(VDD), .VSS(gnd!) ); 
 IBS_norm_rvt I34 ( .IBS_IN(net021), .IBSn_OUT(net038), .IBSp_OUT(net022), .VDD(VDD), .VSS(gnd!) );
 IBS_norm_rvt I6 ( .IBS_IN(net013), .IBSn_OUT(net06), .IBSp_OUT(net032), .VDD(VDD), .VSS(gnd!) );
-res_3K RR8 ( .net014(net014), .gnd!(gnd!) ); 
+res_3K RR8 ( .LEFT(net014), .RIGHT(gnd!) ); 
 
 endmodule
 
@@ -30,8 +30,8 @@ endmodule
 module Amp_diff_norm_rvt ( IBSn, IN, IP, ON, OP, VDD, VSS ); 
 input IBSn, IN, IP, ON, OP, VDD, VSS;
 
-res_3p83 RR0 ( .ON(ON), .VDD(VDD) ); 
-res_3p83 RR9 ( .OP(OP), .VDD(VDD) ); 
+res_3p83 RR0 ( .LEFT(ON), .RIGHT(VDD) ); 
+res_3p83 RR9 ( .RIGHT(OP), .LEFT(VDD) ); 
 SCM_NMOS_4x4_4x3 MN3_MN0 ( .D1(IBSn), .D2(net39), .S(VSS) ); 
 DP_NMOS_2x2_4x3 MN1_MN2 ( .D1(ON), .G1(IP), .S(net39), .D2(OP), .G2(IN) ); 
 
