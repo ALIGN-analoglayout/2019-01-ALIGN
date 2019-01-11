@@ -6,7 +6,8 @@ input VDD;
 Amp_diff_norm_rvt I37 ( .IBSn(net022), .IN(net019), .IP(net020), .ON(rON), .OP(rOP), .VDD(VDD), .VSS(gnd!) ); 
 IBS_norm_rvt I34 ( .IBS_IN(net021), .IBSn_OUT(net038), .IBSp_OUT(net022), .VDD(VDD), .VSS(gnd!) );
 IBS_norm_rvt I6 ( .IBS_IN(net013), .IBSn_OUT(net06), .IBSp_OUT(net032), .VDD(VDD), .VSS(gnd!) );
-res_3K RR8 ( .LEFT(net014), .RIGHT(gnd!) ); 
+res_3K RR1 ( .LEFT(net038), .RIGHT(VDD) ); 
+res_3K RR2 ( .LEFT(net022), .RIGHT(gnd!) ); 
 
 endmodule
 
