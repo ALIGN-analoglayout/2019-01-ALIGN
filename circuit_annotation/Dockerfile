@@ -1,4 +1,4 @@
-FROM ubuntu:18.04 as with_python
+FROM ubuntu:18.04 as ubuntu
 
 RUN apt-get update && apt-get install -yq pkg-config python3 python3-pip python3-venv git build-essential graphviz libgraphviz-dev protobuf-compiler && apt-get clean
 
@@ -6,7 +6,7 @@ RUN \
     python3 -m venv sympy && \
     bash -c "source sympy/bin/activate; pip install pyyaml pytest sympy networkx pygraphviz coverage pytest-cov protobuf matplotlib"
 
-FROM with_python as topology
+FROM ubuntu as topology
  
 RUN \
     mkdir -p /DEMO \
