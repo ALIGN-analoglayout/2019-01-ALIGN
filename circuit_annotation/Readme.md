@@ -1,0 +1,11 @@
+
+Step 1: Copy spice netlist of the circuit in the "input_circuit" directory
+Step 2: Define subcircuit name in the runme.sh file 
+Step 3: Run the module on docker or local machine
+        # Docker commands
+       3.1: docker build -t topology .
+       3.2: docker run --mount source=inputVol,target=/INPUT topology bash -c "source /sympy/bin/activate && cd /DEMO && source runme.sh"
+        # Local machine 
+       3.1: source ./runme.sh
+
+
