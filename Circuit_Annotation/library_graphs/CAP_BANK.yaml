@@ -1,0 +1,54 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  CC4:
+    'ON': &id001 {weight: 1}
+    VCM: &id005 {weight: 2}
+  CC5:
+    'ON': &id002 {weight: 1}
+    VCM: &id006 {weight: 2}
+  CC6:
+    'ON': &id003 {weight: 1}
+    VCM: &id007 {weight: 2}
+  CC7:
+    'ON': &id004 {weight: 1}
+    VCM: &id008 {weight: 2}
+  'ON':
+    CC4: *id001
+    CC5: *id002
+    CC6: *id003
+    CC7: *id004
+  VCM:
+    CC4: *id005
+    CC5: *id006
+    CC6: *id007
+    CC7: *id008
+_node: &id010
+  CC4:
+    edge_weight: [1, 2]
+    inst_type: cap
+    ports: ['ON', VCM]
+    values: ['$[vncap]', $SUB=VSS, m=1, w=3.555u]
+  CC5:
+    edge_weight: [1, 2]
+    inst_type: cap
+    ports: ['ON', VCM]
+    values: ['$[vncap]', $SUB=VSS, m=1, w=3.555u]
+  CC6:
+    edge_weight: [1, 2]
+    inst_type: cap
+    ports: ['ON', VCM]
+    values: ['$[vncap]', $SUB=VSS, m=1, w=3.555u]
+  CC7:
+    edge_weight: [1, 2]
+    inst_type: cap
+    ports: ['ON', VCM]
+    values: ['$[vncap]', $SUB=VSS, m=1, w=3.555u]
+  'ON': {inst_type: net, net_type: external}
+  VCM: {inst_type: net, net_type: external}
+adjlist_inner_dict_factory: &id009 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id009
+edge_attr_dict_factory: *id009
+graph: {}
+node_dict_factory: *id009
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id010

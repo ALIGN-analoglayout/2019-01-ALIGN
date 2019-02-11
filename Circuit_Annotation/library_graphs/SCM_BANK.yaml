@@ -1,0 +1,52 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  IBS_IN:
+    MP0: &id001 {weight: 4}
+    MP1: &id002 {weight: 5}
+    MP2: &id003 {weight: 4}
+  IBSp_OUT:
+    MP2: &id004 {weight: 1}
+  MP0:
+    IBS_IN: *id001
+    VDD: &id005 {weight: 2}
+    net7: &id008 {weight: 1}
+  MP1:
+    IBS_IN: *id002
+    VDD: &id006 {weight: 2}
+  MP2:
+    IBS_IN: *id003
+    IBSp_OUT: *id004
+    VDD: &id007 {weight: 2}
+  VDD:
+    MP0: *id005
+    MP1: *id006
+    MP2: *id007
+  net7:
+    MP0: *id008
+_node: &id010
+  IBS_IN: {inst_type: net, net_type: external}
+  IBSp_OUT: {inst_type: net, net_type: external}
+  MP0:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net7, IBS_IN, VDD]
+    values: [m=1, l=14n, nf=3, nfin=3, fpitch=48n, cpp=78n]
+  MP1:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [IBS_IN, IBS_IN, VDD]
+    values: [m=1, l=14n, nf=3, nfin=3, fpitch=48n, cpp=78n]
+  MP2:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [IBSp_OUT, IBS_IN, VDD]
+    values: [m=4, l=14n, nf=3, nfin=3, fpitch=48n, cpp=78n]
+  VDD: {inst_type: net, net_type: external}
+  net7: {inst_type: net, net_type: external}
+adjlist_inner_dict_factory: &id009 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id009
+edge_attr_dict_factory: *id009
+graph: {}
+node_dict_factory: *id009
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id010

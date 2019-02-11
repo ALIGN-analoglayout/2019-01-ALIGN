@@ -1,0 +1,94 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  MT10:
+    gnda: &id001 {weight: 2}
+    net0135: &id006 {weight: 4}
+    net81: &id016 {weight: 1}
+  MT34:
+    net0135: &id007 {weight: 4}
+    net029: &id012 {weight: 1}
+    net81: &id017 {weight: 2}
+  MT35:
+    net0135: &id008 {weight: 4}
+    net056: &id013 {weight: 1}
+    net78: &id014 {weight: 2}
+  MT43:
+    gnda: &id002 {weight: 2}
+    net0122: &id004 {weight: 1}
+    net0135: &id009 {weight: 4}
+  MT65:
+    net0122: &id005 {weight: 2}
+    net0135: &id010 {weight: 5}
+  MT8:
+    gnda: &id003 {weight: 2}
+    net0135: &id011 {weight: 4}
+    net78: &id015 {weight: 1}
+  gnda:
+    MT10: *id001
+    MT43: *id002
+    MT8: *id003
+  net0122:
+    MT43: *id004
+    MT65: *id005
+  net0135:
+    MT10: *id006
+    MT34: *id007
+    MT35: *id008
+    MT43: *id009
+    MT65: *id010
+    MT8: *id011
+  net029:
+    MT34: *id012
+  net056:
+    MT35: *id013
+  net78:
+    MT35: *id014
+    MT8: *id015
+  net81:
+    MT10: *id016
+    MT34: *id017
+_node: &id019
+  MT10:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net81, net0135, gnda]
+    values: [W=10u, L=500n, M=24, NF=2]
+  MT34:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net029, net0135, net81]
+    values: [W=10u, L=500n, M=16, NF=2]
+  MT35:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net056, net0135, net78]
+    values: [W=10u, L=500n, M=16, NF=2]
+  MT43:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net0122, net0135, gnda]
+    values: [W=10u, L=500n, M=6, NF=2]
+  MT65:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net0135, net0135, net0122]
+    values: [W=10u, L=500n, M=4, NF=2]
+  MT8:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [net78, net0135, gnda]
+    values: [W=10u, L=500n, M=24, NF=2]
+  gnda: {inst_type: net, net_type: external}
+  net0122: {inst_type: net, net_type: internal}
+  net0135: {inst_type: net, net_type: external}
+  net029: {inst_type: net, net_type: external}
+  net056: {inst_type: net, net_type: external}
+  net78: {inst_type: net, net_type: internal}
+  net81: {inst_type: net, net_type: internal}
+adjlist_inner_dict_factory: &id018 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id018
+edge_attr_dict_factory: *id018
+graph: {}
+node_dict_factory: *id018
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id019

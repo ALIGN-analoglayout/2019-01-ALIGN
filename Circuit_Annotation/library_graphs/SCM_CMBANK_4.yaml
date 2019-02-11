@@ -1,0 +1,66 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  D1:
+    MT0: &id001 {weight: 4}
+    MT1: &id004 {weight: 4}
+    MT2: &id007 {weight: 5}
+    MT3: &id009 {weight: 4}
+  D2:
+    MT1: &id005 {weight: 1}
+  D3:
+    MT0: &id002 {weight: 1}
+  D4:
+    MT3: &id010 {weight: 1}
+  GND:
+    MT0: &id003 {weight: 2}
+    MT1: &id006 {weight: 2}
+    MT2: &id008 {weight: 2}
+    MT3: &id011 {weight: 2}
+  MT0:
+    D1: *id001
+    D3: *id002
+    GND: *id003
+  MT1:
+    D1: *id004
+    D2: *id005
+    GND: *id006
+  MT2:
+    D1: *id007
+    GND: *id008
+  MT3:
+    D1: *id009
+    D4: *id010
+    GND: *id011
+_node: &id013
+  D1: {inst_type: net, net_type: external}
+  D2: {inst_type: net, net_type: external}
+  D3: {inst_type: net, net_type: external}
+  D4: {inst_type: net, net_type: external}
+  GND: {inst_type: net, net_type: external}
+  MT0:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [D3, D1, GND]
+    values: [W=10u, L=500n, M=6, NF=2, MPL=6, mSwitch=1, idg=0, AD=1p]
+  MT1:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [D2, D1, GND]
+    values: [W=10u, L=500n, M=6, NF=2, MPL=6, mSwitch=1, idg=0, AD=1p]
+  MT2:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [D1, D1, GND]
+    values: [W=10u, L=500n, M=1, NF=2, MPL=1, mSwitch=0, idg=0, AD=1p]
+  MT3:
+    edge_weight: [1, 4, 2]
+    inst_type: nmos
+    ports: [D4, D1, GND]
+    values: [W=10u, L=500n, M=20, NF=2, MPL=20, mSwitch=1, idg=0]
+adjlist_inner_dict_factory: &id012 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id012
+edge_attr_dict_factory: *id012
+graph: {}
+node_dict_factory: *id012
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id013

@@ -1,0 +1,234 @@
+!!python/object:networkx.classes.graph.Graph
+_adj:
+  MT19:
+    net030: &id010 {weight: 1}
+    net062: &id019 {weight: 2}
+    vbp: &id024 {weight: 4}
+  MT22:
+    net057: &id011 {weight: 1}
+    vbp: &id025 {weight: 4}
+    vdda1p2: &id040 {weight: 2}
+  MT23:
+    net061: &id017 {weight: 2}
+    net60: &id022 {weight: 1}
+    vbp: &id026 {weight: 4}
+  MT24:
+    net060: &id015 {weight: 2}
+    net63: &id023 {weight: 1}
+    vbp: &id027 {weight: 4}
+  MT26:
+    net058: &id013 {weight: 2}
+    net085: &id021 {weight: 1}
+    vbp: &id028 {weight: 4}
+  MT27:
+    net057: &id012 {weight: 2}
+    vbp: &id029 {weight: 5}
+  MT46:
+    net062: &id020 {weight: 1}
+    vbp: &id030 {weight: 4}
+    vdda1p2: &id041 {weight: 2}
+  MT48:
+    net061: &id018 {weight: 1}
+    vbp: &id031 {weight: 4}
+    vdda1p2: &id042 {weight: 2}
+  MT49:
+    net060: &id016 {weight: 1}
+    vbp: &id032 {weight: 4}
+    vdda1p2: &id043 {weight: 2}
+  MT50:
+    net058: &id014 {weight: 1}
+    vbp: &id033 {weight: 4}
+    vdda1p2: &id044 {weight: 2}
+  MT59:
+    net0123: &id007 {weight: 1}
+    vbp: &id034 {weight: 4}
+    vdda1p2: &id045 {weight: 2}
+  MT61:
+    net0117: &id005 {weight: 1}
+    vbp: &id035 {weight: 4}
+    vdda1p2: &id046 {weight: 2}
+  MT62:
+    net0116: &id003 {weight: 1}
+    vbp: &id036 {weight: 4}
+    vdda1p2: &id047 {weight: 2}
+  MT64:
+    net0123: &id008 {weight: 2}
+    net0136: &id009 {weight: 1}
+    vbp: &id037 {weight: 4}
+  MT69:
+    cnp: &id002 {weight: 1}
+    net0117: &id006 {weight: 2}
+    vbp: &id038 {weight: 4}
+  MT70:
+    cnm: &id001 {weight: 1}
+    net0116: &id004 {weight: 2}
+    vbp: &id039 {weight: 4}
+  cnm:
+    MT70: *id001
+  cnp:
+    MT69: *id002
+  net0116:
+    MT62: *id003
+    MT70: *id004
+  net0117:
+    MT61: *id005
+    MT69: *id006
+  net0123:
+    MT59: *id007
+    MT64: *id008
+  net0136:
+    MT64: *id009
+  net030:
+    MT19: *id010
+  net057:
+    MT22: *id011
+    MT27: *id012
+  net058:
+    MT26: *id013
+    MT50: *id014
+  net060:
+    MT24: *id015
+    MT49: *id016
+  net061:
+    MT23: *id017
+    MT48: *id018
+  net062:
+    MT19: *id019
+    MT46: *id020
+  net085:
+    MT26: *id021
+  net60:
+    MT23: *id022
+  net63:
+    MT24: *id023
+  vbp:
+    MT19: *id024
+    MT22: *id025
+    MT23: *id026
+    MT24: *id027
+    MT26: *id028
+    MT27: *id029
+    MT46: *id030
+    MT48: *id031
+    MT49: *id032
+    MT50: *id033
+    MT59: *id034
+    MT61: *id035
+    MT62: *id036
+    MT64: *id037
+    MT69: *id038
+    MT70: *id039
+  vdda1p2:
+    MT22: *id040
+    MT46: *id041
+    MT48: *id042
+    MT49: *id043
+    MT50: *id044
+    MT59: *id045
+    MT61: *id046
+    MT62: *id047
+_node: &id049
+  MT19:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net030, vbp, net062]
+    values: [W=20u, L=180.0n, M=41, NF=2]
+  MT22:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net057, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=1, NF=2]
+  MT23:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net60, vbp, net061]
+    values: [W=20u, L=180.0n, M=60, NF=2]
+  MT24:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net63, vbp, net060]
+    values: [W=20u, L=180.0n, M=60, NF=2]
+  MT26:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net085, vbp, net058]
+    values: [W=20u, L=180.0n, M=8, NF=2]
+  MT27:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [vbp, vbp, net057]
+    values: [W=20u, L=180.0n, M=1, NF=2]
+  MT46:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net062, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=41, NF=2]
+  MT48:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net061, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=60, NF=2]
+  MT49:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net060, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=60, NF=2]
+  MT50:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net058, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=8, NF=2]
+  MT59:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net0123, vbp, vdda1p2]
+    values: [W=20u, L=600n, M=4, NF=2]
+  MT61:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net0117, vbp, vdda1p2]
+    values: [W=10u, L=600n, M=1, NF=1]
+  MT62:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net0116, vbp, vdda1p2]
+    values: [W=10u, L=600n, M=1, NF=1]
+  MT64:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [net0136, vbp, net0123]
+    values: [W=20u, L=180.0n, M=4, NF=2]
+  MT69:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [cnp, vbp, net0117]
+    values: [W=10u, L=180.0n, M=1, NF=1]
+  MT70:
+    edge_weight: [1, 4, 2]
+    inst_type: pmos
+    ports: [cnm, vbp, net0116]
+    values: [W=10u, L=180.0n, M=1, NF=1]
+  cnm: {inst_type: net, net_type: external}
+  cnp: {inst_type: net, net_type: external}
+  net0116: {inst_type: net, net_type: external}
+  net0117: {inst_type: net, net_type: external}
+  net0123: {inst_type: net, net_type: external}
+  net0136: {inst_type: net, net_type: external}
+  net030: {inst_type: net, net_type: external}
+  net057: {inst_type: net, net_type: external}
+  net058: {inst_type: net, net_type: external}
+  net060: {inst_type: net, net_type: external}
+  net061: {inst_type: net, net_type: external}
+  net062: {inst_type: net, net_type: external}
+  net085: {inst_type: net, net_type: external}
+  net60: {inst_type: net, net_type: external}
+  net63: {inst_type: net, net_type: external}
+  vbp: {inst_type: net, net_type: external}
+  vdda1p2: {inst_type: net, net_type: external}
+adjlist_inner_dict_factory: &id048 !!python/name:builtins.dict ''
+adjlist_outer_dict_factory: *id048
+edge_attr_dict_factory: *id048
+graph: {}
+node_dict_factory: *id048
+nodes: !!python/object:networkx.classes.reportviews.NodeView
+  _nodes: *id049
