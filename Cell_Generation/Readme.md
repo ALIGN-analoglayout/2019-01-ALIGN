@@ -1,12 +1,20 @@
 # To run a file on local Machine
+	
+1. Switch (fabric_Switch.pyc)	                     
+2. Differential Pair (fabric_DP.pyc)		                     
+3. Differential Load (fabric_CMC.pyc)		                     
+4. Current Mirror Load (fabric_SCM.pyc)		                     
+5. Current Mirror	     (fabric_CM.pyc)		                     
+6. Unit/arrary Capacitor (fabric_Cap.pyc)
 
-   Cell Name		                      File name		                        Syntax		
-1. Switch (NMOS/PMOS)	               fabric_Switch.pyc	                     python fabric_Switch.pyc nFin X_cells Y_cells
-2. Differential Pair	                  fabric_DP.pyc		                     python fabric_DP.pyc nFin X_cells Y_cells
-3. Differential Load	                  fabric_CMC.pyc		                     python fabric_CMC.pyc nFin X_cells Y_cells
-4. Current Mirror Load	               fabric_SCM.pyc		                     python fabric_SCM.pyc nFin X_cells Y_cells
-5. Current Mirror	                     fabric_CM.pyc		                     python fabric_CM.pyc nFin Xcopy
-6. Unit/arrary Capacitor               fabric_Cap.pyc		                     python fabric_Cap.pyc unitCap X_cells Y_cells
+## Syntax to run these files
+
+1. python fabric_Switch.pyc nFin X_cells Y_cells
+2. python fabric_DP.pyc nFin X_cells Y_cells
+3. python fabric_CMC.pyc nFin X_cells Y_cells
+4. python fabric_SCM.pyc nFin X_cells Y_cells
+5. python fabric_CM.pyc nFin Xcopy
+6. python fabric_Cap.pyc unitCap X_cells Y_cells
 
 # where 
       nFin: number of fins in a unit cell
