@@ -1,5 +1,7 @@
 # To run a file on local Machine
-	
+
+Layouts for these basic cells can be generated:
+
 1. Switch (fabric_Switch.pyc)	                     
 2. Differential Pair (fabric_DP.pyc)		                     
 3. Differential Load (fabric_CMC.pyc)		                     
