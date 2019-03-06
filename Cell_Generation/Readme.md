@@ -18,7 +18,7 @@ Layouts for these basic cells can be generated:
 5. python fabric_CM_NMOS/PMOS.pyc nFin Xcopy
 6. python fabric_Cap.pyc unitCap X_cells Y_cells
 
-NOTE: After execution of these scripts a Json file "mydesign_dr_globalrouting.json" will be generated in this directory; copy this file in "./Viewer/INPUT/" and open "./Viewer/index.html" to view the generated layout
+NOTE: After execution of these scripts a Json file "mydesign_dr_globalrouting.json" will generate in this directory; copy this file in "./Viewer/INPUT/" and open "./Viewer/index.html" to view the generated layout
 
 # where 
       nFin: number of fins in a unit cell
