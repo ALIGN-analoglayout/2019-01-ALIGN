@@ -18,6 +18,8 @@ Layouts for these basic cells can be generated:
 5. python fabric_CM_NMOS/PMOS.pyc nFin Xcopy
 6. python fabric_Cap.pyc unitCap X_cells Y_cells
 
+NOTE: After execution of these scripts a Json file "mydesign_dr_globalrouting.json" will be generated in this directory; copy this file in "./Viewer/INPUT/" and open "./Viewer/index.html" to view the generated layout
+
 # where 
       nFin: number of fins in a unit cell
       X_cells: number of cells in X-direction
@@ -25,7 +27,6 @@ Layouts for these basic cells can be generated:
       Xcopy: "Xcopy" times reference current
       UnitCap: Value of the unit cap (e.g. python fabric_cap.py 2 1 1; it will generate a capacitance of value 2fF)
 
-NOTE: After execution of the file  a Json file "mydesign_dr_globalrouting.json" will be generated in this directory; copy this file in "./Viewer/INPUT/" and open "./Viewer/index.html" to view the generated layout
 
 # To run a file on Docker
 
