@@ -2,20 +2,20 @@
 
 Layouts for these basic cells can be generated:
 
-1. Switch (fabric_Switch_NMOS/PMOS.pyc)	                     
-2. Differential Pair (fabric_DP_NMOS/PMOS.pyc)		                     
-3. Differential Load (fabric_CMC_NMOS/PMOS.pyc)		                     
-4. Current Mirror Load (fabric_SCM_NMOS/PMOS.pyc)		                     
-5. Current Mirror	     (fabric_CM_NMOS/PMOS.pyc)		                     
-6. Unit/arrary Capacitor (fabric_Cap.pyc)
+1. Switch (fabric_Switch_NMOS/PMOS.py)	                     
+2. Differential Pair (fabric_DP_NMOS/PMOS.py)		                     
+3. Differential Load (fabric_CMC_NMOS/PMOS.py)		                     
+4. Current Mirror Load (fabric_SCM_NMOS/PMOS.py)		                     
+5. Current Mirror	     (fabric_CM_NMOS/PMOS.py)		                     
+6. Unit/arrary Capacitor (fabric_Cap.py)
 
 ## Syntax to run these files (Use Python 3.7)
 
-1. python fabric_Switch_NMOS/PMOS.pyc nFin X_cells Y_cells
-2. python fabric_DP_NMOS/PMOS.pyc nFin X_cells Y_cells
-3. python fabric_CMC_NMOS/PMOS.pyc nFin X_cells Y_cells
-4. python fabric_SCM_NMOS/PMOS.pyc nFin X_cells Y_cells
-5. python fabric_CM_NMOS/PMOS.pyc nFin Xcopy
+1. python fabric_Switch_NMOS/PMOS.py nFin X_cells Y_cells
+2. python fabric_DP_NMOS/PMOS.py nFin X_cells Y_cells
+3. python fabric_CMC_NMOS/PMOS.py nFin X_cells Y_cells
+4. python fabric_SCM_NMOS/PMOS.py nFin X_cells Y_cells
+5. python fabric_CM_NMOS/PMOS.py nFin Xcopy
 6. python fabric_Cap.pyc unitCap X_cells Y_cells
 
 NOTE: After execution of these scripts a Json file "mydesign_dr_globalrouting.json" will generate in this directory; copy this file in "./Viewer/INPUT/" and open "./Viewer/index.html" to view the generated layout
