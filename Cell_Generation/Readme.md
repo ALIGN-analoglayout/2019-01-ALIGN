@@ -1,4 +1,4 @@
-# To run a file on local Machine (Use Python 3.7)
+# To run a file on local Machine (Use Python 3.5.2 or higher)
 
 Layouts for these basic cells can be generated:
 
@@ -9,7 +9,7 @@ Layouts for these basic cells can be generated:
 5. Current Mirror	     (fabric_CM_NMOS/PMOS.py)		                     
 6. Unit/arrary Capacitor (fabric_Cap.py)
 
-## Syntax to run these files (Use Python 3.7)
+## Syntax to run these files (Use Python 3.5.2 or higher)
 
 1. python fabric_Switch_NMOS/PMOS.py nFin X_cells Y_cells
 2. python fabric_DP_NMOS/PMOS.py nFin X_cells Y_cells
